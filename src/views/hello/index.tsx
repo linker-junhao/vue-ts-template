@@ -4,7 +4,7 @@ export default defineComponent({
   name: 'LoginRedirectTo',
   setup() {
     return () => (
-      <div>12312</div>
+      <div class="font-light">12312</div>
     );
   }
 });

@@ -9,7 +9,6 @@
     "sourceMap": true,
     "resolveJsonModule": true,
     "esModuleInterop": true,
-    "types": ["vite/client"],
     "moduleResolution": "node",
     "baseUrl": ".",
     "paths": {
@@ -21,7 +20,10 @@
       "dom.iterable",
       "scripthost"
     ],
-    "typeRoots": []
+    "types": ["vite/client"],
+    "typeRoots": [
+      "./node_modules/@types"
+    ]
   },
   "include": [
     "./src/**/*.ts",
@@ -29,7 +31,7 @@
     "./src/**/*.vue",
     "./tests/**/*.ts",
     "./tests/**/*.tsx"
-, "src/views/hello"  ],
+  ],
   "exclude": [
     "./node_modules"
   ]
