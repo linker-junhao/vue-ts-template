@@ -5,8 +5,7 @@ module.exports = {
   },
   extends: [
     'plugin:vue/vue3-recommended',
-    'standard',
-    'stylelint-config-standard'
+    'airbnb-base'
   ],
   parserOptions: {
     ecmaVersion: 12,
@@ -21,10 +20,6 @@ module.exports = {
     'comma-dangle': ['error', 'never'],
     'no-multiple-empty-lines': ['error', { max: 2, maxEOF: 1 }],
     'no-param-reassign': ['error', { props: false }],
-    indent: [
-      'error',
-      2
-    ],
     quotes: ['error', 'single'],
     'import/extensions': 'off',
     'import/no-unresolved': 'off',
@@ -33,6 +28,8 @@ module.exports = {
     'no-shadow': 'off',
     '@typescript-eslint/no-shadow': ['error'],
     '@typescript-eslint/no-unused-vars': ['error'],
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }]
+    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    indent: 'off',
+    '@typescript-eslint/indent': 'off'
   }
 };

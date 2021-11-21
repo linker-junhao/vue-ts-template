@@ -1,10 +1,11 @@
 import { defineComponent } from 'vue';
+import { RouterView } from 'vue-router';
 
 export default defineComponent({
-  name: 'LoginRedirectTo',
+  name: 'Container',
   setup() {
     return () => (
-      <div class="bg-pink-400">12312</div>
+      <RouterView/>
     );
   }
 });
