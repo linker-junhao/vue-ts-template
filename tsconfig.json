@@ -19,18 +19,21 @@
       "esnext",
       "dom",
       "dom.iterable",
-      "scripthost"
+      "scripthost",
+      "webworker"
     ],
     "types": ["vite/client"],
     "typeRoots": [
       "./node_modules/@types",
       "./src/types"
-    ]
+    ],
+    "plugins": [{"name": "typescript-plugin-css-modules"}]
   },
   "include": [
     "./src/**/*.ts",
     "./src/**/*.tsx",
     "./src/**/*.vue",
+    "./src/**/*.module.less",
     "./tests/**/*.ts",
     "./tests/**/*.tsx"
   ],
